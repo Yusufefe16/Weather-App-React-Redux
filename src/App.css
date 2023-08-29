@@ -1,0 +1,112 @@
+body{
+  background-color: #e7eaf6;
+}
+.container {
+  margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+/* Temel stiller */
+.chosen-value {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 200px;
+    margin-right: 10px;
+  }
+  
+  /* Giriş alanı için stiller */
+  button {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    color: #ff0000; /* Rengi değiştirerek hover etkisini gösterebilirsiniz */
+  }
+  
+  .content{
+    border: 5px solid #a2a8d3;
+    border-radius: 8px;
+    max-width: 1300px;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  ul{
+    padding-left: 0;
+  }
+
+  li{
+    list-style: none;
+  }
+
+  .contentdaily{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+
+  .contentcomingdays{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 0 10px 10px 10px;
+  }
+
+  .middle{
+    margin: 10px 10px 10px 10px;
+    padding: 10px 0;
+    background-color: #fff6da; 
+    border-radius: 8px;
+    font-weight: 500;
+  }
+
+  .degree{
+    align-self: center;
+    font-size: 40px;
+    font-weight: 500;
+  }
+
+  .details{
+    align-self: center;
+  }
+  .card{
+    background-color: #dffff6;
+    border-radius: 8px;
+    padding: 10px 0;
+  }
+
+  .contentheader{
+    background-color: #daffda;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+  }
+
+  .daily{
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  @media (max-width: 450px) {
+    .contentdaily{
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  }
+
+  @media (max-width:565px){
+    .contentcomingdays{
+      grid-template-columns: 1fr;
+    }
+  }
