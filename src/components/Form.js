@@ -4,6 +4,7 @@ import Map from "./Map";
 import { useDispatch } from 'react-redux';
 import { fetchWeatherData  } from "../store/weatherSlice";
 import Content from "./Content";
+import Footer from "./Footer";
 
 function Form() {
   const dispatch = useDispatch();
@@ -14,6 +15,7 @@ dispatch(fetchWeatherData());
     <SelectCity/>
     <Map/>
     <Content/>
+    <Footer/>
   </div>;
 }
 

@@ -94,7 +94,7 @@ function Content() {
                 <div>Wind: {averageWindSpeed[0]} m/s</div>
               )}
             </div>
-            <div>Rain: {rain[0]}</div>
+            <div>Rain: {rain[0]}%</div>
             {isNaN(humidity[0]) ? (
               <div>humidity: {humidity[1]}%</div>
             ):(
@@ -154,9 +154,9 @@ function Content() {
           </div>
           <div>
             {maxTemp[0] === -Infinity ? (
-              <div>min: {maxTemp[1]}°C</div>
+              <div>max: {maxTemp[1]}°C</div>
             ) : (
-              <div>min: {maxTemp[0]}°C</div>
+              <div>max: {maxTemp[0]}°C</div>
             )}
           </div>
         </div>
